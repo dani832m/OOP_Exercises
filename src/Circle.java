@@ -20,6 +20,12 @@ public class Circle {
         color = "red";
     }
 
+    // 3rd constructor to construct a new instance of Circle with the given radius and color
+    public Circle (double r, String c) {
+        radius = r;
+        color = c;
+    }
+
     // A public method for retrieving the radius.
     public double getRadius() {
         return radius;
@@ -28,5 +34,20 @@ public class Circle {
     // A public method for computing the area of circle.
     public double getArea() {
         return radius*radius*Math.PI;
+    }
+
+    // Getter for instance variable color
+    public String getColor() {
+        return color;
+    }
+
+    // Setter for instance variable radius
+    public void setRadius(double newRadius) {
+        radius = newRadius;
+    }
+
+    // Setter for instance variable color
+    public void setColor(String newColor) {
+        color = newColor;
     }
 }
