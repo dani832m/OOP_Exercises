@@ -7,7 +7,7 @@ public class TestAuthor {
         System.out.println(dani);  // Test toString()
         dani.setEmail("newmail@n4.dk");  // Test setter
         System.out.println("Name is: " + dani.getName());     // Test getter
-        System.out.println("E-mail is: " + dani.getEmail());   // Test getter
+        System.out.println("E-mail is: " + dani.getEmail());  // Test getter
         System.out.println("Gender is: " + dani.getGender()); // Test getter
     }
 }
