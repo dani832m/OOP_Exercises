@@ -15,15 +15,15 @@ public class Circle {
     }
 
     // 2nd constructor with given radius, but color default.
-    public Circle(double r) {
-        radius = r;
+    public Circle(double radius) {
+        this.radius = radius;
         color = "red";
     }
 
     // 3rd constructor to construct a new instance of Circle with the given radius and color
-    public Circle (double r, String c) {
-        radius = r;
-        color = c;
+    public Circle (double radius, String color) {
+        this.radius = radius;
+        this.color = color;
     }
 
     // A public method for retrieving the radius.
@@ -42,12 +42,17 @@ public class Circle {
     }
 
     // Setter for instance variable radius
-    public void setRadius(double newRadius) {
-        radius = newRadius;
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 
     // Setter for instance variable color
-    public void setColor(String newColor) {
-        color = newColor;
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    // Return a description of this instance in the form of Circle[radius=r,color=c]
+    public String toString() {
+        return "Circle[radius=" + radius + " color=" + color + "]";
     }
 }

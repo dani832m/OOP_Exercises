@@ -42,5 +42,9 @@ public class TestCircle {
         /* You cannot do the following because setRadius() returns void, which cannot be printed.
         System.out.println(c4.setRadius(4.0)); */
 
+        Circle c5 = new Circle(5.0);
+        System.out.println(c5.toString());   // Explicit call, just like every other method
+        System.out.println(c5);              // Implicit call, toString invoked implicitly
+        System.out.println("Operator '+' invokes toString() too: " + c5);  // '+' invokes toString() too
     }
 }
